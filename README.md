@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# Wedding Company — Frontend Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the frontend for the Wedding Company assignment completed as a
+Frontend Developer Intern task.
 
-Currently, two official plugins are available:
+**Candidate:** KARTIKEY MITTAL  
+**RA Number:** RA2211028030017
+**Deployed Link:** https://wedding-company-five.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Assignment:** Frontend Developer Intern - Assignment for Wedding Company
 
-## React Compiler
+**Figma Design:** https://www.figma.com/design/MHt6QPdmr1lKvJYiLMA1Tx/Front-End-Dev.-Assignment?node-id=0-1&p=f&t=IfAGKLvTQCCLB872-0
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Preview Screenshots**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![Initial Screen](src/assets/initialscreen.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+![Final Screen](src/assets/finalscreen.png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Tech Stack Used**
+- **Framework:** React (Vite + TypeScript)
+- **Build Tool:** Vite
+- **Language:** TypeScript
+- **Styling:** CSS (project uses `App.css` / `index.css`)
+- **Tooling:** ESLint, TypeScript configs (`tsconfig.json`)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Key Features Implemented**
+- **Responsive UI:** Layout and components adapt for common screen sizes.
+- **Static Content Pages:** Landing / main quiz pages implemented as per Figma.
+- **Routing-ready Structure:** App entry in `src/main.tsx` and modular components in `src/`.
+- **Asset Management:** Screenshots and images placed under `src/assets/` and referenced from README.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Getting started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Install dependencies:
+
+   `npm install`
+
+2. Run the dev server:
+
+   `npm run dev`
+
+Notes
+- If the preview images do not display, make sure `initialscreen.png` and `finalscreen.png` are placed in `src/assets/`.
+- This README highlights the implemented frontend parts of the assignment and provides the Figma design link for reference.
+
+If you want, I can: commit these changes, push to the remote, or add the actual image files to `src/assets/` now.
